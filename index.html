@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Restaurant</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fff;
+color:#333;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#111;
+padding:15px 80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+color:#ffb400;
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffb400;
+}
+
+.hero{
+height:100vh;
+background:url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero p{
+margin:20px;
+font-size:20px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#ffb400;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+section{
+padding:100px 80px;
+}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+font-size:40px;
+color:#222;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#fff;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+border-radius:15px;
+overflow:hidden;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.price{
+color:#ff5722;
+font-size:20px;
+font-weight:bold;
+margin-top:10px;
+}
+
+.chefs{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.chef{
+text-align:center;
+}
+
+.chef img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.review-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.review{
+padding:30px;
+background:#fafafa;
+border-left:5px solid orange;
+}
+
+form{
+max-width:700px;
+margin:auto;
+display:grid;
+gap:20px;
+}
+
+input,textarea{
+padding:15px;
+font-size:16px;
+border:1px solid #ccc;
+outline:none;
+}
+
+button{
+padding:15px;
+background:#ffb400;
+color:white;
+border:none;
+font-size:18px;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@media(max-width:900px){
+
+header{
+padding:20px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+section{
+padding:80px 20px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">Royal Restaurant</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#menu">Menu</a>
+<a href="#chef">Chef</a>
+<a href="#gallery">Gallery</a>
+<a href="#booking">Book</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Delicious Food</h1>
+
+<p>Fresh Ingredients • Best Chefs • Fast Delivery</p>
+
+<a href="#menu" class="btn">Explore Menu</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
+
+<div>
+
+<h2>Welcome to Royal Restaurant</h2>
+
+<br>
+
+<p>
+
+Experience world-class dining with freshly prepared meals,
+professional chefs, and a warm atmosphere.
+
+</p>
+
+<br>
+
+<p>
+
+We serve Indian, Chinese, Italian and Continental cuisines
+using premium quality ingredients.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="menu">
+
+<h2 class="title">Our Menu</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+
+<div class="card-content">
+
+<h3>Cheese Burger</h3>
+
+<p>Juicy grilled burger with cheese.</p>
+
+<div class="price">$12</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+
+<div class="card-content">
+
+<h3>Healthy Salad</h3>
+
+<p>Fresh vegetables and dressing.</p>
+
+<div class="price">$9</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591">
+
+<div class="card-content">
+
+<h3>Italian Pizza</h3>
+
+<p>Stone baked pizza with mozzarella.</p>
+
+<div class="price">$18</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="chef">
+
+<h2 class="title">Our Chefs</h2>
+
+<div class="chefs">
+
+<div class="chef">
+
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e">
+
+<h3>Chef John</h3>
+
+</div>
+
+<div class="chef">
+
+<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330">
+
+<h3>Chef Emma</h3>
+
+</div>
+
+<div class="chef">
+
+<img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d">
+
+<h3>Chef Alex</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="title">Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+
+<img src="https://images.unsplash.com/photo-1552566626-52f8b828add9">
+
+<img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Customer Reviews</h2>
+
+<div class="review-box">
+
+<div class="review">
+
+★★★★★
+
+<p>
+
+Amazing food and excellent service!
+
+</p>
+
+</div>
+
+<div class="review">
+
+★★★★★
+
+<p>
+
+Best restaurant in the city.
+
+</p>
+
+</div>
+
+<div class="review">
+
+★★★★★
+
+<p>
+
+Loved the atmosphere and desserts.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="booking">
+
+<h2 class="title">Book a Table</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<input type="date">
+
+<input type="time">
+
+<textarea rows="5" placeholder="Special Request"></textarea>
+
+<button>Reserve Now</button>
+
+</form>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<center>
+
+<p><i class="fa-solid fa-location-dot"></i> New York, USA</p>
+
+<br>
+
+<p><i class="fa-solid fa-phone"></i> +1 234 567 890</p>
+
+<br>
+
+<p><i class="fa-solid fa-envelope"></i> info@royalrestaurant.com</p>
+
+</center>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Royal Restaurant | Designed with HTML & CSS
+
+</p>
+
+
+<footer>
+    <p>© 2026 Royal Restaurant | Designed with HTML & CSS</p>
+</footer>
+
+<script type="module">
+
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+import {
+  getFirestore,
+  collection,
+  addDoc
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDnjcayUBkp90LM-g1ehakp0xx45lrJHsQ",
+  authDomain: "varun-4b4ec.firebaseapp.com",
+  projectId: "varun-4b4ec",
+  storageBucket: "varun-4b4ec.firebasestorage.app",
+  messagingSenderId: "518160373785",
+  appId: "1:518160373785:web:f6afd83687b0299dbf7288",
+  measurementId: "G-15W9R341CP"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+console.log("Firebase Connected!");
+
+// Get form
+const form = document.querySelector("form");
+
+form.addEventListener("submit", async function(e) {
+
+    e.preventDefault();
+
+    const inputs = form.querySelectorAll("input");
+    const textarea = form.querySelector("textarea");
+
+    const name = inputs[0].value;
+    const email = inputs[1].value;
+    const date = inputs[2].value;
+    const time = inputs[3].value;
+    const request = textarea.value;
+
+    try {
+
+        await addDoc(collection(db, "reservations"), {
+
+            name: name,
+            email: email,
+            date: date,
+            time: time,
+            request: request,
+            createdAt: new Date()
+
+        });
+
+        alert("Reservation Saved Successfully!");
+
+        form.reset();
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert("Error Saving Reservation!");
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
